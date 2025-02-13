@@ -24,14 +24,14 @@ def jogo():
             jogador = int(input("Digite um valor de chute:"))
             sleep(1)
             contador += 1
-            if jogador == numero_random:
+            if (jogador == numero_random):
                 print("Acertou!!!!!")
                 sleep(1.5)
                 print(f'O Jogador precisou de {contador} chutes para acertar o numero {numero_random}')
                 break
-            elif jogador > numero_random:
+            elif (jogador > numero_random):
                 print("O valor do chute é maior que o numero correto")
-            elif jogador < numero_random:
+            elif (jogador < numero_random):
                 print("O valor informado é menor que o numero correto")
         except ValueError:
             print("Digite apenas numeros!")
